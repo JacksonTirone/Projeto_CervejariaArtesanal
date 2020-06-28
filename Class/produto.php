@@ -10,7 +10,7 @@
         public $marca_idMarca;
         public $nomeFantasia;
         public $informacaoGeral;
-    }
+    
 
     function __construct($idProduto, $nome, $descricao, $unidadeDePeso, $preco, $tipoCerveja, $porcentagemAlcoolica, $marca_idMarca, $nomeFantasia="", $informacaoGeral=""){
         $this->idProduto = $idProduto;
@@ -24,5 +24,6 @@
         $this->nomeFantasia = $nomeFantasia;
         $this->informaçãoGeral = $informacaoGeral;
     }
+}
 
 ?>
