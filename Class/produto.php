@@ -8,21 +8,19 @@
         public $tipoCerveja;
         public $porcentagemAlcoolica;
         public $marca_idMarca;
-        public $nomeFantasia;
-        public $informacaoGeral;
+
     
 
-    function __construct($idProduto, $nome, $descricao, $unidadeDePeso, $preco, $tipoCerveja, $porcentagemAlcoolica, $marca_idMarca, $nomeFantasia="", $informacaoGeral=""){
+    function __construct($idProduto, $nome, $descricao, $unidadeDePeso, $preco, $tipoCerveja, $porcentagemAlcoolica, $marca_idMarca){
         $this->idProduto = $idProduto;
         $this->nome = $nome;
         $this->descricao = $descricao;
-        $this->unidadeDePreco = $unidadeDePeso;
+        $this->unidadeDePeso = $unidadeDePeso;
         $this->preco = $preco;
         $this->tipoCerveja = $tipoCerveja;
         $this->porcentagemAlcoolica = $porcentagemAlcoolica;
         $this->marca_idMarca = $marca_idMarca;
-        $this->nomeFantasia = $nomeFantasia;
-        $this->informaçãoGeral = $informacaoGeral;
+        
     }
 }
 
