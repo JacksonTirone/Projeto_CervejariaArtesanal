@@ -38,7 +38,7 @@
             $executa->bindParam ("idUsuario", $idUsuario);
             $executa->execute();
             $resultado = $executa->fetch(PDO::FETCH_OBJ);
-            return new Usuario($resultado->idUsuario, $resultado->nome, $resultado->CPF, $resultado->dataNascimento, $resultado->email, $resultado->senha, $resultado->endereco_idEndereco);
+            return new Usuario($resultado->idUsuario, $resultado->nome, $resultado->CPF, $resultado->dataNascimento, $resultado->email, $resultado->senha);
         }
 
         public function listar(){
@@ -48,7 +48,7 @@
             $executa->execute();
             $listaUsuario = array();
             while($row = $executa->fetch(PDO::FETCH_OBJ)){
-                $listaUsuario[] = new Usuario($row->idUsuario, $row->nome, $row->CPF, $row->dataNascimento, $row->email, $row->senha, $row->endereco_idEndereco);
+                $listaUsuario[] = new Usuario($row->idUsuario, $row->nome, $row->CPF, $row->dataNascimento, $row->email, $row->senha);
             }
             return $listaUsuario;
           }
