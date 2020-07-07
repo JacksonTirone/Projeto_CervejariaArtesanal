@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=">
+        <title>Dashboard Beer do Charles</title>
+
+    <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/inDesign.css">
+    <!--===============================================================================================-->
+
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a href="cadastro.html"><h1 class="logo">A melhor Cerveja Artejanal Tchê</h1></a>
+            <nav class="menu" id="menu2">
+                <ul>
+                        <li><a href="cadastroUsuario.html">Cadastrar Usuario</a></li>
+                    <li><a href="https://www.senacrs.com.br/">Sair</a></li>
+                </ul>
+            </nav> 
+        </header>
+                   
+            <div class="limiter">
+                <div class="container-login100">
+                    <div class="wrap-login100 p-t-85 p-b-20">
+                    <main>
+                        <h2>Cadastro de Produtos</h2>          
+                        <form id="formulario">
+
+                            <div class="wrap-input100 validate-input m-t-35 m-b-35" data-validate = "Nome do Produto">
+                                <input id="txtnome" class="input100" type="text" name="nomeDoProduto" required>
+                                <span class="focus-input100" data-placeholder="Nome do Produto"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "Descrição">
+                                    <input id="txtdescricao" class="input100" type="text" name="descricao" required>
+                                    <span class="focus-input100" data-placeholder="Descrição do Produto"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "unidadeDePeso">
+                                    <input id="txtunidadeDePeso" class="input100" type="text" name="unidadeDePeso" required>
+                                    <span class="focus-input100" data-placeholder="Peso em ML"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "preco">
+                                    <input id="txtpreco" class="input100" type="text" name="preco" required>
+                                    <span class="focus-input100" data-placeholder="Valor"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "tipoCerveja">
+                                    <input id="txttipoCerveja" class="input100" type="text" name="tipoCerveja" required>
+                                    <span class="focus-input100" data-placeholder="Tipo da Cerveja"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "porcentagemAlcoolica">
+                                    <input id="txtporcentagemAlcoolica" class="input100" type="text" name="porcentagemAlcoolica" required>
+                                    <span class="focus-input100" data-placeholder="Porcentagem Alcoolica"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "marca_idMarca">
+                                    <input id="txtmarca_idMarca" class="input100" type="text" name="marca_idMarca" required>
+                                    <span class="focus-input100" data-placeholder="Código da Marca"></span>
+                            </div>
+
+                            <input type="hidden" id="txtidProduto">
+
+                            <div class="container-login100-form-btn">
+                                <button id="btnsalvar" class="login100-form-btn">Cadastrar</button> <br/>
+                            </div> <br/>
+                            <div class="container-login100-form-btn">
+                                    <button type="reset" value="Cancelar" class="login100-form-btn">Limpar</button>
+                            </div>
+                        </form>
+                    </main> 
+                    </div>   
+                </div>
+            </div>
+            <br/>
+
+            <h2>Tabela de Produtos</h2>   
+                <div id="tabela"  class="table thead-dark">
+                
+                </div>
+
+    <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+            
+    </body>
+
+    <script src="js/produto.js"></script>
+
+</html>

@@ -1,0 +1,439 @@
+
+* {
+	margin: 0px;	
+    padding: 0px;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+/*CABEÇALHOO*/
+
+.cabecalho{
+    width: 100%;
+    float: left;
+}
+
+.logo{
+    width: 66px;
+    height: 66px;
+    float: left;
+    background: url(../images/Logo.png) center center/66px no-repeat;
+    font-size: 0;
+}
+
+.btn-menu {
+    width: 56px;
+    height: 56px;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 56px;
+    cursor: pointer;
+    background: linear-gradient(to right,#D9A93D,#D94C3C);
+}
+
+/*MENU*/
+
+.menu{
+    display: none;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+}
+.btn-close{
+    font-size: 1.5em;
+    color: #ffffff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li{
+    padding: 1.5%
+}
+.menu li a{
+    font: 2em;
+    color: #ffffff;
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    border: 2px solid #f6d609;
+}
+
+/*SOBRE*/
+.sobreBeer{
+    padding-top: 60px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    float: left;
+}
+.sobreBeer h2{
+    font-size: 2.5em;
+    color: #fdcf04;
+    font-weight: 700;
+    padding: 3% 4%;
+}
+
+.sobreBeer p{
+    font-size: 1.2em;
+    color: #ffffff;
+    padding: 3% 4%;
+    text-align: justify;
+}
+
+/*BANNER*/
+.banner {
+    margin-top: 60px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 4% 4%;
+    background: url(../images/fundo.jpg) no-repeat fixed;
+}
+
+.titulo h2{
+    font-size: 2.5em;
+    color: #ffffff;
+    font-weight: 700;
+}
+.titulo h3{
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.botao{
+    width: 100%;
+    margin-top: 3%;
+}
+.botao i{
+    float:right;
+}
+.loogoo{
+    width: 100%;
+    height: 100px;
+    float: left;
+    background: url(../images/Logo2.png) center center /120px no-repeat;
+    font-size: 0;
+}
+.btn-compra{
+    width: 100%;
+    font-size: 2.0em;
+    text-align: center;
+    cursor: pointer;
+    padding: 3%;
+    border-radius: 8px;
+    background-color: #fdcf04;
+    color: rgb(20, 20, 20);
+}
+
+/*PRODUTOS*/
+
+.tituloprodutos{
+    width: 100%;
+    float: left;
+}
+.tituloprodutos h1{
+    font-size: 2em;
+    color:rgb(20, 20, 20);
+    font-weight: 700;
+    padding: 6% 4%;
+
+}
+
+.produtos{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+.produto{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.inner{
+    padding: 7%;
+}
+.inner h4{
+    font-size: 1.7em;
+    color:rgb(20, 20, 20);
+    margin-top: 2%;    
+}
+.inner p{
+    margin-top: 3%;
+    color:rgb(20, 20, 20);
+    line-height: 1.5em;
+}
+
+.botao-produto{
+    width: 100%;
+}
+.btn-venda{
+    width: 70%;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 8px;
+    background-color: #fdcf04;
+    color: rgb(20, 20, 20);
+}
+
+
+.beditar, .bexcluir {
+    text-align: center;
+}
+
+.beditar:hover {
+    background-color: rgb(232, 209, 41);
+    cursor: pointer;
+}
+
+.bexcluir:hover {
+    background-color: rgb(232, 76, 41);
+    cursor: pointer;
+}
+
+/*NEWS*/
+.news{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background-color: rgb(20, 20, 20);
+
+}
+.news h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 700;
+}
+.news h3{
+    color: #ffffff;
+}
+.news form{
+    margin-top: 2%;
+}
+.news input{
+    width: 100%;
+    background-color:  rgb(20, 20, 20);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 5%;
+    border-radius: 3px; 
+}
+.news button{
+    width: 100%;
+    background-color: #ffffff;
+    color:  rgb(20, 20, 20);
+    padding: 5%;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+/*RODAPÉ*/
+.rodape{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background-color:  rgb(20, 20, 20);
+}
+.social-icones a{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255, 0.7);
+    margin-right: 3%;
+
+}
+.social-icones a:last-child{
+    margin-right: 0;
+}
+.social-icones a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+.copy{
+    margin-top: 3%;
+    color: rgb(255, 255, 255);
+}
+
+/*Mudando a Responsividade do Layout*/
+@media screen and (min-width: 1024px){
+
+    .cabecalho {
+        background-color: #fff;
+        position: fixed;
+    }
+
+    .menu{
+       
+        list-style: none;
+    }
+    .logo{
+        width: 256px;
+        float: left;
+        background: url(../images/logo-Desktop.png) center center/256px no-repeat;
+        font-size: 0;
+    }
+    
+    .tituloprodutos{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .produto{
+        width: 48%;
+        float: left;
+        margin-right: 2%;        
+    }
+    .produto:nth-child(1){
+        margin-right: 0;
+    }
+    .btn-venda{
+        width: 50%;
+        font-size: 1.2em;
+        text-align: center;
+        cursor: pointer;
+        padding: 2%;
+        border-radius: 8px;
+        background-color: #fdcf04;
+        color: rgb(20, 20, 20);
+    }
+
+    .news h2{
+        font-size: 2em;
+    }
+    .news h3{
+        font-size: 1.5em;
+    }
+    .news input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+    .news button {
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+    
+    .titulo{
+        width: 45%;
+        float: left;
+        text-align: center;
+    }
+    .titulo h2{
+        font-size: 3em;
+    }
+    .titulo h3{
+        font-size: 1.5em;
+    }
+    .btn-compra{
+        width: 50%;
+        padding: 1%;
+        border-radius: 3px;
+    }
+    .btn-compra i{
+        display: none;
+    }
+    
+    .copooo{
+        width: 337px;
+        height: 350px;
+        width: 55%;
+        float: right;
+        background: url(../images/copo.png) center center  no-repeat;
+        }
+
+    .news h2{
+        font-size: 2em;
+    }
+    .news h3{
+        font-size: 1.5em;
+    }
+    .news input{
+        width: 40%;
+        padding: 2%;
+        float: none;
+        margin-right: 1%;
+    }
+    .news button {
+        width: 20%;
+        padding: 2%;
+        float: none;
+        margin-top: 0;
+    }
+
+    .sobreBeer h2{
+        width: 45%;
+        font-size: 4em;
+        padding: 5% 10%;
+        float: left;
+        margin-right: 1%;
+
+    }
+
+    .sobreBeer p{
+        width: 48%;
+        font-size: 1em;
+        float: right;
+        margin-right: 1%;
+
+    }
+
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        height: 70px;
+        line-height: 70px;
+        float: right;
+        background-color: #ffffff;
+        display: block !important;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: #ebc806;
+        font-size: 1em;
+        padding: 30px;
+        
+    }
+    .menu li a:hover{
+        border: #fdcf04;
+        color: #ebc806
+    }     
+
+}
+
+

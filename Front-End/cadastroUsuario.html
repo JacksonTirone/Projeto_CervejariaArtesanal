@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=">
+        <title>Dashboard Beer do Charles</title>
+
+    <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/inDesign.css">
+    <!--===============================================================================================-->
+
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a href="cadastro.html"><h1 class="logo">A melhor Cerveja Artejanal Tchê</h1></a>
+            <nav class="menu" id="menu2">
+                <ul>
+                    <li><a href="produto.html">Cadastrar produto</a></li>
+                    <li><a href="https://www.senacrs.com.br/">Sair</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+                   
+            <div class="limiter">
+                <div class="container-login100">
+                    <div class="wrap-login100 p-t-85 p-b-20">
+                    <main>
+                        <h2>Cadastro de Usuários</h2>          
+                        <form id="formulario">
+
+                            <div class="wrap-input100 validate-input m-t-35 m-b-35" data-validate = "Nome Completo">
+                                <input id="txtnome" class="input100" type="text" name="nome" required>
+                                <span class="focus-input100" data-placeholder="Nome Completo"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "CPF">
+                                    <input id="txtCPF" class="input100" type="text" name="CPF" required>
+                                    <span class="focus-input100" data-placeholder="informe seu CPF"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "dataNascimento">
+                                    <input id="txtdataNascimento" class="input100" type="text" name="dataNascimento" required>
+                                    <span class="focus-input100" data-placeholder="Data de Nascimento"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "E-mail">
+                                    <input id="txtemail" class="input100" type="text" name="E-mail" required>
+                                    <span class="focus-input100" data-placeholder="Seu E-mail"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input m-t-25 m-b-35" data-validate = "senha">
+                                    <input id="txtsenha" class="input100" type="text" name="senha" required>
+                                    <span class="focus-input100" data-placeholder="Digite uma senha"></span>
+                            </div>
+
+
+                            <input type="hidden" id="txtidUsuario">
+
+                            <div class="container-login100-form-btn">
+                                <button id="btnsalvar" class="login100-form-btn">Cadastrar</button> <br/>
+                            </div> <br/>
+                            <div class="container-login100-form-btn">
+                                    <button type="reset" value="Cancelar" class="login100-form-btn">Limpar</button>
+                            </div>
+                        </form>
+                    </main> 
+                    </div>   
+                </div>
+            </div>
+            <br/>
+
+            
+      
+
+            <h2>Tabela de Produtos</h2>   
+                <div id="tabela"  class="table thead-dark">
+    
+                
+                </div>
+
+    <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>    
+            
+    </body>
+
+    <script src="js/usuario.js"></script>
+</html>
